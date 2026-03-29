@@ -2,7 +2,7 @@
 
 # 🔍 RoomRush
 ### 輔仁大學空教室查詢系統
-**Fu Jen Catholic University — Available Classroom Finder**
+**Fu Jen Catholic University — Empty Room  Finder**
 
 > 114學年度下學期 ｜ Academic Year 114, Semester 2
 
