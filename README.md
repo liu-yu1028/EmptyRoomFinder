@@ -83,7 +83,7 @@
 > 點擊下方連結，在瀏覽器中直接體驗，無需安裝任何 App
 > Click the link to try the app in your browser — no installation needed.
 
-🔗 **[線上試玩 / Try it Online →](YOUR_APPETIZE_LINK_HERE)**
+🔗 **[線上試玩 / Try it Online →](https://appetize.io/app/b_osk63si4qworisw7jqydkv674u)**
 
 ---
 
@@ -103,13 +103,13 @@
 
 **Android 裝置安裝：**
 
-1. 前往 [Releases](YOUR_APK_RELEASE_LINK_HERE) 下載最新 APK
+1. 前往 [Releases](https://github.com/liu-yu1028/EmptyRoomFinder/releases/download/v1.0.0/app-release.apk) 下載最新 APK
 2. 在 Android 裝置開啟「允許安裝未知來源應用程式」
 3. 安裝並開啟 App
 
 **網頁體驗（免安裝）：**
 
-直接前往 [Appetize.io 試玩連結](YOUR_APPETIZE_LINK_HERE) 即可在瀏覽器操作。
+直接前往 [Appetize.io 試玩連結](https://appetize.io/app/b_osk63si4qworisw7jqydkv674u) 即可在瀏覽器操作。
 
 ---
 
