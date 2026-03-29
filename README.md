@@ -29,7 +29,7 @@
 
 [![線上試玩](https://img.shields.io/badge/▶%20線上試玩-Try%20Online-4A90D9?style=for-the-badge)](https://appetize.io/app/b_osk63si4qworisw7jqydkv674u)
 &nbsp;
-[![下載 APK](https://img.shields.io/badge/⬇%20下載%20APK-Download-2ECC71?style=for-the-badge)](https://appetize.io/embed/b_osk63si4qworisw7jqydkv674u)
+[![下載 APK](https://img.shields.io/badge/⬇%20下載%20APK-Download-2ECC71?style=for-the-badge)](https://github.com/liu-yu1028/EmptyRoomFinder/releases/download/v1.0.0/app-release.apk)
 
 </div>
 
