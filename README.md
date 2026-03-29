@@ -4,9 +4,7 @@
 
 <p align="center">
   <!-- 把你的截圖放到 repo 的 screenshots/ 資料夾，再替換下面的路徑 -->
-  <img src="screenshots/home.png" width="200"/>
-  <img src="screenshots/search.png" width="200"/>
-  <img src="screenshots/result.png" width="200"/>
+  <img src="screenshots/phone.png" width="200"/>
 </p>
 
 <p align="center">
