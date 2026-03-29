@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EmptyRoomFinder</string>
+    <string name="query_results">空教室查詢結果</string>
+    <string name="classroom_details">教室詳細內容</string>
+    <string name="classroom_type">教室類型：</string>
+    <string name="food_allowed">是否可飲食：</string>
+    <string name="main_title">空教室查詢系統</string>
+</resources>

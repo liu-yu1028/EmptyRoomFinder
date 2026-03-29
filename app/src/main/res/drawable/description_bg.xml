@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 白色半透明背景 (#CC 代表約 80% 不透明度) -->
+    <solid android:color="#CCFFFFFF" />
+    <!-- 圓角 -->
+    <corners android:radius="12dp" />
+    <!-- 邊框 (可選，增加質感) -->
+    <stroke
+        android:width="1dp"
+        android:color="#E0E0E0" />
+</shape>
