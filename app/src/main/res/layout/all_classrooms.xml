@@ -31,22 +31,29 @@
             android:layout_height="0dp"
             android:paddingHorizontal="8dp"
             android:clipToPadding="false"
-            app:layout_constraintBottom_toTopOf="@+id/btn_exit"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_container"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_exit"
-            style="@style/Widget.Material3.Button.TonalButton"
-            android:layout_width="200dp"
-            android:layout_height="56dp"
-            android:layout_marginBottom="24dp"
-            android:text="離開"
-            app:cornerRadius="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface"
+            android:elevation="8dp"
+            android:padding="24dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_exit"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="離開"
+                android:textSize="18sp"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -55,7 +62,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="100dp"
         android:src="@android:drawable/ic_input_add"
         app:tint="@color/on_primary"
         android:backgroundTint="@color/primary"

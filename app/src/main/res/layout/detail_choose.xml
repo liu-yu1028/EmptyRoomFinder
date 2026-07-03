@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="教室詳細設定"
+            app:title="選擇設定教室"
             app:titleCentered="true" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="選擇教室進行設定"
-        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:text="點擊教室名稱以進行細項設定"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
         android:textColor="@color/primary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
@@ -37,23 +37,35 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:paddingHorizontal="8dp"
         android:clipToPadding="false"
-        app:layout_constraintBottom_toTopOf="@+id/exit2"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/all_classrooms_sub_title" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/exit2"
-        style="@style/Widget.Material3.Button.TonalButton"
-        android:layout_width="200dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="24dp"
-        android:text="離開"
-        app:cornerRadius="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/exit2"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="返回管理頁面"
+                android:textSize="16sp"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

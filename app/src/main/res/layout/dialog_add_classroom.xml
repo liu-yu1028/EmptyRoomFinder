@@ -9,17 +9,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="新增教室"
+        android:layout_marginBottom="20dp"
+        android:text="新增教室資訊"
         android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
-        android:textColor="@color/primary" />
+        android:textColor="@color/primary"
+        android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="教室名稱 (例如: SF123)">
+        android:hint="教室名稱 (例如: SF123)"
+        app:startIconDrawable="@android:drawable/ic_menu_edit">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/classroom_name_input"
@@ -33,7 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="教室類型"
-        android:textAppearance="@style/TextAppearance.Material3.BodySmall" />
+        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+        android:textColor="@color/on_surface_variant" />
 
     <Spinner
         android:id="@+id/new_classroom_type_spinner"

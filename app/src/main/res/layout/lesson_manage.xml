@@ -23,6 +23,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:clipToPadding="false"
         app:layout_constraintBottom_toTopOf="@+id/button_container"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
@@ -36,47 +37,115 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="1dp"
+                app:cardElevation="2dp"
                 app:strokeColor="@color/divider"
                 app:strokeWidth="1dp">
 
-                <TableLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
-                    android:stretchColumns="1">
+                    android:orientation="vertical"
+                    android:padding="20dp">
 
-                    <TableRow android:layout_marginBottom="12dp" android:gravity="center_vertical">
-                        <TextView android:text="選擇大樓" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" android:layout_marginEnd="16dp"/>
-                        <Spinner android:id="@+id/building_setting" android:layout_width="match_parent" android:layout_height="48dp" />
-                    </TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="編輯課表資訊"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
 
-                    <TableRow android:layout_marginBottom="12dp" android:gravity="center_vertical">
-                        <TextView android:text="選擇樓層" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" android:layout_marginEnd="16dp"/>
-                        <Spinner android:id="@+id/floor_setting" android:layout_width="match_parent" android:layout_height="48dp" />
-                    </TableRow>
+                    <!-- 大樓選擇 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="選擇大樓"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                        android:textColor="@color/on_surface_variant" />
+                    <Spinner
+                        android:id="@+id/building_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp" />
 
-                    <TableRow android:layout_marginBottom="12dp" android:gravity="center_vertical">
-                        <TextView android:text="教室名稱" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" android:layout_marginEnd="16dp"/>
-                        <Spinner android:id="@+id/classroom_setting" android:layout_width="match_parent" android:layout_height="48dp" />
-                    </TableRow>
+                    <!-- 樓層選擇 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="選擇樓層"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                        android:textColor="@color/on_surface_variant" />
+                    <Spinner
+                        android:id="@+id/floor_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp" />
 
-                    <TableRow android:layout_marginBottom="12dp" android:gravity="center_vertical">
-                        <TextView android:text="課堂星期" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" android:layout_marginEnd="16dp"/>
-                        <Spinner android:id="@+id/day_setting" android:layout_width="match_parent" android:layout_height="48dp" />
-                    </TableRow>
+                    <!-- 教室名稱 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="教室名稱"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                        android:textColor="@color/on_surface_variant" />
+                    <Spinner
+                        android:id="@+id/classroom_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp" />
 
-                    <TableRow android:layout_marginBottom="12dp" android:gravity="center_vertical">
-                        <TextView android:text="課堂時段" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" android:layout_marginEnd="16dp"/>
-                        <Spinner android:id="@+id/time_setting" android:layout_width="match_parent" android:layout_height="48dp" />
-                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@color/divider" />
 
-                    <TableRow android:gravity="center_vertical">
-                        <TextView android:text="是否有課" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" android:layout_marginEnd="16dp"/>
-                        <Spinner android:id="@+id/has_class_setting" android:layout_width="match_parent" android:layout_height="48dp" />
-                    </TableRow>
+                    <!-- 課堂星期 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="課堂星期"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                        android:textColor="@color/on_surface_variant" />
+                    <Spinner
+                        android:id="@+id/day_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp" />
 
-                </TableLayout>
+                    <!-- 課堂時段 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="課堂時段"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                        android:textColor="@color/on_surface_variant" />
+                    <Spinner
+                        android:id="@+id/time_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- 是否有課 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否有課"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                        android:textColor="@color/on_surface_variant" />
+                    <Spinner
+                        android:id="@+id/has_class_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
     </ScrollView>
@@ -91,11 +160,14 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/edit"
+            style="@style/Widget.Material3.Button"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginBottom="12dp"
-            android:text="修改狀態"
-            android:textSize="16sp"
+            android:text="修改"
+            android:textColor="@color/on_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:cornerRadius="12dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -105,7 +177,7 @@
             android:layout_height="56dp"
             android:layout_marginBottom="12dp"
             android:text="刪除教室"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="@color/error"
             app:cornerRadius="12dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -114,7 +186,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:text="離開"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:textColor="@color/on_surface_variant" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
