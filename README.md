@@ -11,6 +11,8 @@
 [![Room](https://img.shields.io/badge/Database-Room%20SQLite-2563EB?style=for-the-badge)](#)
 [![MVVM](https://img.shields.io/badge/Architecture-MVVM-0F766E?style=for-the-badge)](#)
 
+[![下載 APK](https://img.shields.io/badge/Download-RoomRush%20v1.1.0-2ECC71?style=for-the-badge)](https://github.com/liu-yu1028/EmptyRoomFinder/releases/download/v1.1.0/RoomRush-v1.1.0-debug.apk)
+
 </div>
 
 ---
