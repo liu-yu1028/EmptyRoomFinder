@@ -6,10 +6,7 @@
 
 一款以輔仁大學校園情境出發的 Android App，協助學生快速查詢聖言樓與進修部大樓的可用空教室。
 
-![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-2.x-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Room](https://img.shields.io/badge/Database-Room%20SQLite-2563EB?style=for-the-badge)
-![MVVM](https://img.shields.io/badge/Architecture-MVVM-0F766E?style=for-the-badge)
+**Android** · **Kotlin 2.x** · **Room SQLite** · **MVVM**
 
 [![線上試玩](https://img.shields.io/badge/Try%20Online-Appetize.io-4A90D9?style=for-the-badge)](https://appetize.io/app/b_bbqvft556jil3taiseo4xy2hve)
 [![下載 APK](https://img.shields.io/badge/Download-RoomRush%20v1.1.0-2ECC71?style=for-the-badge)](https://github.com/liu-yu1028/EmptyRoomFinder/releases/download/v1.1.0/RoomRush-v1.1.0-debug.apk)
